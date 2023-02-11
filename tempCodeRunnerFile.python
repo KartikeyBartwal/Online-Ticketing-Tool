@@ -1,0 +1,31 @@
+import tkinter as tk
+from time import sleep
+
+def on_name_submit():
+    name = entry_name.get()
+    label_email.config(text="What is your email address?")
+    entry_email.pack()
+    submit_button.config(text="Submit", command=on_email_submit)
+    print("Name:", name)
+    sleep(3)
+
+def on_email_submit():
+    email = entry_email.get()
+    print("Email:", email)
+
+root = tk.Tk()
+root.geometry("480x480")
+root.title("Chatbot")
+
+label_name = tk.Label(root, text="What is your name?")
+label_name.pack()
+
+entry_name = tk.Entry(root)
+entry_name.pack()
+
+submit_button = tk.Button(root, text="Submit", command=on_name_submit)
+submit_button.pack()
+
+label_email = tk.Label(root, text="")
+
+root.mainloop()

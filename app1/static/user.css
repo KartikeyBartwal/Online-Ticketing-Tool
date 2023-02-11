@@ -1,0 +1,131 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .container{
+    margin-left: 0px;
+    padding: 18px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .container li{
+    margin-left: 10px;
+    list-style: none;
+    display: inline;
+  }
+  .container li a{
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    color: #f2f2f2;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all .3s ease-in;
+    font-family: "Play", sans-serif;
+  }
+  .container li a:hover{
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  
+  /* _________________________________________________________________________________________________ */
+  body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  /* _________________________________________________________________________________________________ */
+  
+  
+  .cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white;
+  }
+  
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+  
+  
+  /* _____________________________________________________________________________________________________ */
+  
+  .cp-text
+  {
+    padding-left: 40%;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  }
+  
