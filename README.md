@@ -1,3 +1,5 @@
+https://cdn.dribbble.com/userupload/7416660/file/original-e59cd9bfd2c565afd928c54b53573392.png?resize=400x300&vertical=center
+
 # Online Ticketing Application
 
 This repository contains an online ticketing application designed to manage and resolve hardware, software, and login access issues systematically in large organizations.
